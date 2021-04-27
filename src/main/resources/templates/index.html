@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>第一个页面</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/index.css" th-href="@{/css/index.css}"/>
+</head>
+<body>
+第一个页面
+<input type="text" name="name" value="li" th:value="${user?.name}"/>
+<p th:text="#{messages}"></p>
+<a href="/test">点击登录问题</a>
+</body>
+</html>
